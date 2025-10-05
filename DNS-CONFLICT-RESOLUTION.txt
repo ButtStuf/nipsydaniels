@@ -1,0 +1,51 @@
+GODADDY DNS CONFLICT RESOLUTION
+==============================
+
+ERROR: "www conflicts with another value"
+SOLUTION: Delete existing www record first
+
+STEP-BY-STEP FIX:
+================
+
+1. IN GODADDY DNS MANAGEMENT:
+   - Look for existing "www" record
+   - DELETE the existing www record first
+   - Then add the new CNAME record
+
+2. COMMON EXISTING RECORDS TO DELETE:
+   - www → points to @ (A record)
+   - www → points to domain.com (CNAME)
+   - www → points to parking page
+
+3. AFTER DELETING EXISTING www RECORD:
+   - Add new CNAME record:
+   - Type: CNAME
+   - Name: www
+   - Value: ButtStuf.github.io
+   - TTL: 1 Hour
+
+ALTERNATIVE SOLUTION:
+====================
+If you can't delete the existing www record:
+
+1. CHANGE THE EXISTING www RECORD:
+   - Edit the existing www record
+   - Change the value to: ButtStuf.github.io
+   - Change type to CNAME if it's an A record
+
+2. OR USE DIFFERENT NAME:
+   - Instead of "www", use "www2" or "web"
+   - But "www" is preferred for the main site
+
+FINAL DNS CONFIGURATION:
+========================
+After resolving conflict:
+
+A RECORDS (4 records):
+Type: A, Name: @, Value: 185.199.108.153
+Type: A, Name: @, Value: 185.199.109.153
+Type: A, Name: @, Value: 185.199.110.153
+Type: A, Name: @, Value: 185.199.111.153
+
+CNAME RECORD:
+Type: CNAME, Name: www, Value: ButtStuf.github.io

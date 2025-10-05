@@ -1,0 +1,41 @@
+GODADDY DNS CONFIGURATION FOR nipsydaniels.store
+================================================
+
+DELETE EXISTING A RECORDS FIRST
+Then add these records:
+
+A RECORDS:
+----------
+Type: A
+Name: @
+Value: 185.199.108.153
+
+Type: A
+Name: @
+Value: 185.199.109.153
+
+Type: A
+Name: @
+Value: 185.199.110.153
+
+Type: A
+Name: @
+Value: 185.199.111.153
+
+CNAME RECORD:
+-------------
+Type: CNAME
+Name: www
+Value: ButtStuf.github.io
+
+INSTRUCTIONS:
+1. Go to GoDaddy DNS Management
+2. Delete all existing A records
+3. Add the 4 A records above
+4. Add the CNAME record above
+5. Save changes
+6. Wait 24-48 hours for propagation
+
+TEST WITH:
+- https://dnschecker.org
+- https://nipsydaniels.store

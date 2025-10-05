@@ -1,0 +1,96 @@
+FINAL DNS CONFIGURATION FOR nipsydaniels.store
+==============================================
+
+GODADDY DNS RECORDS TO ADD:
+===========================
+
+1. DELETE ALL EXISTING A RECORDS FIRST
+
+2. ADD THESE 4 A RECORDS:
+------------------------
+Record 1:
+Type: A
+Name: @
+Value: 185.199.108.153
+TTL: 1 Hour
+
+Record 2:
+Type: A
+Name: @
+Value: 185.199.109.153
+TTL: 1 Hour
+
+Record 3:
+Type: A
+Name: @
+Value: 185.199.110.153
+TTL: 1 Hour
+
+Record 4:
+Type: A
+Name: @
+Value: 185.199.111.153
+TTL: 1 Hour
+
+3. ADD CNAME RECORD:
+-------------------
+Type: CNAME
+Name: www
+Value: ButtStuf.github.io
+TTL: 1 Hour
+
+GITHUB PAGES SETTINGS:
+=====================
+1. Go to: https://github.com/ButtStuf/nipsydaniels/settings/pages
+2. Source: Deploy from a branch
+3. Branch: main
+4. Folder: / (root)
+5. Custom domain: nipsydaniels.store
+6. Check "Enforce HTTPS"
+7. Save changes
+
+SSL CERTIFICATE:
+===============
+- GitHub automatically provides free SSL
+- Takes 5-10 minutes to generate
+- Enable "Enforce HTTPS" when available
+- Test with: https://nipsydaniels.store
+
+FINAL TESTING:
+=============
+1. Test: https://nipsydaniels.store
+2. Test: https://www.nipsydaniels.store
+3. Check SSL Labs: https://www.ssllabs.com/ssltest/
+4. Verify DNS propagation: https://dnschecker.org
+5. Test all website sections
+6. Test on mobile devices
+
+WEBSITE SECTIONS:
+================
+✅ Hero Section - Nipsy's photo and book cover
+✅ Books Section - Book information
+✅ In The Works - Upcoming projects
+✅ The Speculation Industry - Conspiracy info
+✅ About Nipsy - Biographical information
+✅ Subscribe Section - Email signup
+✅ LIT BITCHES - Featured book section
+✅ Comments/Reviews - Customer testimonials
+✅ SOULIGHTERPRO Link - Parent company
+✅ Legal Section - Copyright and terms
+
+MISSING IMAGES TO ADD:
+=====================
+- NIPSYPIC.png (hero section)
+- LITB1.png (book cover)
+- NIPSY3.PNG (about section)
+
+FINAL RESULT:
+============
+Your website will be live at:
+https://nipsydaniels.store
+
+Total Cost: $0.00
+Domain: nipsydaniels.store
+Hosting: GitHub Pages (FREE)
+SSL: GitHub SSL (FREE)
+DNS: GoDaddy

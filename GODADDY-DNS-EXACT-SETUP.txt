@@ -1,0 +1,60 @@
+GODADDY DNS CONFIGURATION - EXACT STEPS
+========================================
+
+LOGIN CREDENTIALS:
+Username: Bossanova24
+Password: Roscow99!
+
+DNS RECORDS TO ADD:
+==================
+
+1. DELETE ALL EXISTING A RECORDS FIRST
+
+2. ADD THESE 4 A RECORDS:
+------------------------
+Record 1:
+Type: A
+Name: @
+Value: 185.199.108.153
+TTL: 1 Hour (or default)
+
+Record 2:
+Type: A
+Name: @
+Value: 185.199.109.153
+TTL: 1 Hour (or default)
+
+Record 3:
+Type: A
+Name: @
+Value: 185.199.110.153
+TTL: 1 Hour (or default)
+
+Record 4:
+Type: A
+Name: @
+Value: 185.199.111.153
+TTL: 1 Hour (or default)
+
+3. ADD CNAME RECORD:
+-------------------
+Type: CNAME
+Name: www
+Value: ButtStuf.github.io
+TTL: 1 Hour (or default)
+
+STEP-BY-STEP INSTRUCTIONS:
+=========================
+
+1. Go to: https://dcc.godaddy.com/manage/nipsydaniels.store/dns
+2. Login with: Bossanova24 / Roscow99!
+3. Delete all existing A records
+4. Click "Add" for each record above
+5. Save all changes
+6. Wait 24-48 hours for propagation
+
+VERIFICATION:
+============
+- Check with: https://dnschecker.org
+- Test: https://nipsydaniels.store
+- Should work within 24-48 hours
