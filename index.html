@@ -498,7 +498,7 @@
         <div class="container">
             <div class="header-content">
                 <a href="#" class="logo">Nipsy Daniels</a>
-                <a href="#buy" class="buy-button">BUY LIT BITCHES NOW!</a>
+                <a href="https://www.amazon.com/dp/B0FTTCLSYC" target="_blank" class="buy-button">BUY LIT BITCHES NOW!</a>
             </div>
         </div>
     </header>
@@ -712,10 +712,7 @@
         });
 
         // Buy button functionality
-        document.querySelector('.buy-button').addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('Pre-order coming soon! Stay tuned for "LIT! BITCHES GUIDE TO VIRAL BEFORE YOUR BEST FRIEND"');
-        });
+        // Buy button now links directly to Amazon - no preventDefault needed
 
         // Add some interactive effects
         document.querySelectorAll('.nav-card').forEach(card => {
