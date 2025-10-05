@@ -181,7 +181,7 @@ function handleSocialLinkClick(event) {
     } else if (platform.includes('tiktok')) {
         showModal('TikTok Coming Soon', 'Follow @nipsydaniels on TikTok for viral content!');
     } else if (platform.includes('envelope')) {
-        window.location.href = 'mailto:404actor@gmail.com';
+        window.location.href = 'mailto:flipnipsip942@gmail.com';
     }
     
     event.preventDefault();

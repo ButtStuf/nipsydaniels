@@ -115,7 +115,7 @@ The website is ready for deployment on:
 
 ## Contact Information
 
-- **Email**: 404actor@gmail.com
+- **Email**: flipnipsip942@gmail.com
 - **Website**: nipsydaniels.tk (to be deployed)
 
 ## Required Images
