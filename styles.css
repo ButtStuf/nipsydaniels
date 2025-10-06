@@ -98,14 +98,14 @@ body {
 }
 
 .quote p {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     color: #1a1a1a;
     margin-bottom: 5px;
 }
 
 .attribution {
-    font-size: 12px;
+    font-size: 10px;
     color: #666;
     font-style: italic;
 }
@@ -169,7 +169,7 @@ body {
 .author-image {
     max-width: 100%;
     height: auto;
-    max-height: 600px;
+    max-height: 450px;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -239,7 +239,7 @@ body {
 }
 
 .about-text h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     color: #1a1a1a;
     margin-bottom: 30px;
@@ -279,7 +279,7 @@ body {
 }
 
 .books-content h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     color: #1a1a1a;
     margin-bottom: 50px;
@@ -363,7 +363,7 @@ body {
 }
 
 .events-content h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     color: #1a1a1a;
     margin-bottom: 50px;
@@ -412,7 +412,7 @@ body {
 }
 
 .social-content h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     color: #1a1a1a;
     margin-bottom: 50px;
@@ -454,7 +454,7 @@ body {
 }
 
 .subscribe-content h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     color: #1a1a1a;
     margin-bottom: 20px;
