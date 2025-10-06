@@ -98,14 +98,14 @@ body {
 }
 
 .quote p {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     color: #1a1a1a;
     margin-bottom: 5px;
 }
 
 .attribution {
-    font-size: 14px;
+    font-size: 12px;
     color: #666;
     font-style: italic;
 }
@@ -115,11 +115,31 @@ body {
     justify-content: center;
 }
 
+.book-cover-center {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.book-cover-center a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.book-cover-center a:hover {
+    transform: scale(1.05);
+}
+
 .book-image {
-    max-width: 200px;
+    max-width: 280px;
     height: auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.book-image:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .buy-button {
