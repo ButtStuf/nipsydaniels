@@ -125,10 +125,10 @@
         /* Hero Section - Split Screen with 3D */
         .hero {
             min-height: 100vh;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            gap: 4rem;
             padding: 8rem 4rem 4rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -191,16 +191,25 @@
             perspective: 1000px;
         }
 
+        .book-cover-3d a {
+            display: inline-block;
+            cursor: pointer;
+        }
+
         .book-cover-3d img {
             width: 100%;
             max-width: 400px;
             transform: rotateY(-15deg) rotateX(5deg);
-            box-shadow: -20px 20px 60px rgba(0, 0, 0, 0.7);
-            transition: transform 0.5s ease;
+            box-shadow: -20px 20px 60px rgba(0, 0, 0, 0.7),
+                        0 0 0 0 rgba(255, 215, 0, 0);
+            transition: all 0.5s ease;
+            border-radius: 10px;
         }
 
-        .book-cover-3d:hover img {
-            transform: rotateY(0deg) rotateX(0deg) scale(1.05);
+        .book-cover-3d a:hover img {
+            transform: rotateY(0deg) rotateX(0deg) scale(1.1);
+            box-shadow: -20px 20px 80px rgba(0, 0, 0, 0.9),
+                        0 0 40px 10px rgba(255, 215, 0, 0.6);
         }
 
         /* About Section - Timeline */
@@ -484,15 +493,25 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-image">
-            <img src="images/NIPSYPIC.png" alt="Nipsy Daniels" loading="lazy">
-        </div>
-        <div class="hero-content">
-            <h1>Nipsy Daniels</h1>
-            <p class="hero-subtitle">Author • Coach • PI</p>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem;">They killed my husband 127 days ago. Now I'm exposing the truth about the Speculation Industry.</p>
+        <div style="text-align: center; width: 100%;">
+            <!-- Main Centerpiece: NIPSYPIC -->
+            <div class="hero-image" style="margin-bottom: 2rem;">
+                <img src="images/NIPSYPIC.png" alt="Nipsy Daniels" loading="lazy">
+            </div>
+
+            <!-- Hero Text -->
+            <div class="hero-content" style="margin-bottom: 3rem;">
+                <h1>Nipsy Daniels</h1>
+                <p class="hero-subtitle">Author • Coach • PI</p>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">They killed my husband 127 days ago. Now I'm exposing the truth about the Speculation Industry.</p>
+            </div>
+
+            <!-- Clickable Book Cover -->
             <div class="book-cover-3d">
-                <img src="images/LITB1.png" alt="LIT! BITCHES GUIDE Book Cover" loading="lazy">
+                <a href="https://www.amazon.com/dp/B0FTTPDP6L" target="_blank" title="Buy LIT! BITCHES GUIDE on Amazon">
+                    <img src="images/LITB1.png" alt="LIT! BITCHES GUIDE Book Cover - Click to Buy on Amazon" loading="lazy">
+                </a>
+                <p style="margin-top: 1rem; color: var(--gold); font-size: 1.1rem; font-weight: 600;">👆 Click the book to purchase on Amazon</p>
             </div>
         </div>
     </section>
